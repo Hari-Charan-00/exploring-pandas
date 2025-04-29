@@ -192,9 +192,7 @@ def main():
         print("Failed to generate access token. Exiting.")
         return
 
-    partners = {
-        "b5c94cda-23bb-b843-6be3-3f929e37e191": "Tri-Valley"  # Example partner
-    }
+    partners = {}
 
     all_devices_info = []  # List to store all the data
 
@@ -205,7 +203,7 @@ def main():
 
         for client_name, client_id in clients.items():
             noc_name = get_noc_name(access_token, partner_id, client_id, client_name, URL)
-            if noc_name in ["SRO1", "SRO2", "Vistara NOC"]:
+            if noc_name in [""]:
                 print(f"Fetching devices for client: {client_name}")
 
                 devices = fetch_devices(access_token, client_id, client_name, partner_id, URL)
