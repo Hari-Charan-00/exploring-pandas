@@ -2,7 +2,7 @@ import requests
 import time
 import pandas as pd
 
-URL = "https://netenrich.opsramp.com/"
+URL = ""
 CLIENT_ID = ""
 CLIENT_SECRET = ""
 
